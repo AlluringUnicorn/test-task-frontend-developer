@@ -4,8 +4,7 @@
   "info": {
     "singularName": "film",
     "pluralName": "films",
-    "displayName": "Film",
-    "description": ""
+    "displayName": "Film"
   },
   "options": {
     "draftAndPublish": true
@@ -13,31 +12,29 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string",
-      "required": true,
-      "unique": true
+      "type": "string"
     },
     "year": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "genre": {
-      "type": "string",
-      "required": true
-    },
-    "poster": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+      "type": "string"
     },
     "link": {
       "type": "string"
     },
     "posterUrl": {
       "type": "string"
+    },
+    "poster": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
